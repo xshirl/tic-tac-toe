@@ -1,0 +1,59 @@
+body {
+  text-align:center;
+}
+
+.row {
+  display:flex;
+  justify-content:center;
+}
+.row:after {
+  content:'';
+  display:table;
+  clear:both;
+}
+
+.square {
+  float:left;
+  width:200px;
+  height:200px;
+  background-color:black;
+}
+
+.one, .two, .four, .five {
+  border-right:2px solid white;
+  border-bottom:2px solid white;
+}
+.three, .six {
+  border-bottom:2px solid white;
+}
+
+.seven, .eight {
+  border-right:2px solid white;
+}
+
+.first {
+  background-color:red;
+}
+
+.first:before {
+  content: 'X';
+  font-size:200px;
+}
+
+.second {
+  background-color:blue;
+}
+
+.second:before {
+  content: 'O';
+  font-size:200px;
+}
+
+#restart {
+  text-align:center;
+  background-color:orange;
+  outline:none;
+  padding:15px;
+  font-size:20px;
+
+}
